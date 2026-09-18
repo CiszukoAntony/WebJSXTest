@@ -2,7 +2,13 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ] # Cambia 'main' por 'master' si tu rama principal se llama así
+    branches: [ main ] # O 'master' según sea tu rama principal
+
+# --- AÑADE ESTE BLOQUE DE PERMISOS ---
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -32,4 +38,4 @@ jobs:
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # La carpeta que genera Vite al compilar
+          folder: dist
