@@ -1,9 +1,15 @@
 import '../globals.css'
-// Importas el componente (la extensión .jsx al final es opcional, se suele omitir)
+import HeroTitle from '../components/HeroTitle';
+import { useEffect } from 'react'
 
 const Form = () => {
+    useEffect(() => {
+        console.log("El usuario ha visitado la página de Form");
+    }, []);
+
   return (
-    <div>
+    <div className="form-webpage-class" id="webpage">
+        <HeroTitle title="form" />
         <p>
             Formulario Page.
             </p>

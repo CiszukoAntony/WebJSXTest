@@ -20,6 +20,10 @@
     flex: 1; 
 }
 
+#webpage {
+    padding-top: 100px;
+}
+
 body {
     color: var(--pure-white);
     font-family: var(--font);
@@ -33,27 +37,53 @@ body {
     user-select: none;         /* Estándar moderno */
     font-family: var(--font);
     margin: 12px;
-    width: 1000px;
+    width: 900px;
     padding: 12px;
     gap: 12px;
     border-radius: 12px;
     color: var(--pure-white);
-    display: flexbox; /* Corregido de flexbox a flex */
+    display: flex; /* Corregido de flexbox a flex */
     text-align: center;
     align-items: center;
+    flex-basis: content;
+    flex-direction: column;
     align-content: center;
     align-self: center;
     background-color: rgb(3, 0, 34);
     font-size: 16px; /* Corregido de size a font-size */
     transition: 0.25s ease;
 
+    p {
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;  
+    }
+
     &:hover {
         font-size: 20px;
         color: lightblue;
     }
 }
+.hero-title-class {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: 0.5s ease-in;
+    text-shadow: 2px 2px black;
+
+    &:hover {
+        font-size: 32px;
+        text-shadow: 4px 4px black;
+    }
+}
 
 .header-class {
+    position: fixed;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;     /* Internet Explorer/Edge */
@@ -63,23 +93,29 @@ body {
         color: inherit;
     }
     display: flex; /* Corregido de flexbox a flex */
+    flex-direction: row;
     font-family: var(--font);
+    width: 900px;
     margin: 12px;
-    padding: 12px;
-    gap: 12px;
-    border-radius: 12px;
     color: var(--pure-white);
     text-align: left;
     align-items: center;
-    background-color: rgb(11, 5, 83);
+    background-color: rgba(73, 73, 255, 0.39);
     font-size: 12px; /* Corregido de size a font-size */
     transition: 0.25s ease;
+    border-style: solid;
+    border-radius: 18px;
+    border-width: 4px;
+    border-color: rgba(28, 28, 211, 0.445);             /* Desenfoque para navegadores modernos */
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
 
     .appname-class {
         font-size: 16px;
         font-weight: bolder;
         border-width: 0px;
         transition: 0.25s ease;
+        padding: 12px;
 
         &:hover {
             font-size: 22px;
