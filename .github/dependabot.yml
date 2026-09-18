@@ -5,6 +5,7 @@
 
 version: 2
 updates:
+<<<<<<< HEAD
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -19,3 +20,9 @@ updates:
     open-pull-requests-limit: 5
     labels:
       - "dependencies"
+=======
+  - package-ecosystem: "" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+>>>>>>> 2ef51c0b44faccbcea029bc65f9659e5d4a50336
