@@ -1,0 +1,122 @@
+:root {
+    /* Fuentes */
+    --font: Arial, Helvetica, sans-serif;
+
+    /* Colores */
+    --pure-white: white;
+    --bg-color: rgb(20, 1, 66);
+}
+
+/* Contenedor que envuelve toda la aplicación */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
+    margin: 0;
+}
+
+/* El área central que se expandirá para llenar el espacio vacío */
+.main-content {
+    flex: 1; 
+}
+
+body {
+    color: var(--pure-white);
+    font-family: var(--font);
+    background-color: var(--bg-color);
+}
+
+.footer-class {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Estándar moderno */
+    font-family: var(--font);
+    margin: 12px;
+    width: 1000px;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+    color: var(--pure-white);
+    display: flexbox; /* Corregido de flexbox a flex */
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    background-color: rgb(3, 0, 34);
+    font-size: 16px; /* Corregido de size a font-size */
+    transition: 0.25s ease;
+
+    &:hover {
+        font-size: 20px;
+        color: lightblue;
+    }
+}
+
+.header-class {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Estándar moderno */
+        a {
+        text-decoration: none;
+        color: inherit;
+    }
+    display: flex; /* Corregido de flexbox a flex */
+    font-family: var(--font);
+    margin: 12px;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 12px;
+    color: var(--pure-white);
+    text-align: left;
+    align-items: center;
+    background-color: rgb(11, 5, 83);
+    font-size: 12px; /* Corregido de size a font-size */
+    transition: 0.25s ease;
+
+    .appname-class {
+        font-size: 16px;
+        font-weight: bolder;
+        border-width: 0px;
+        transition: 0.25s ease;
+
+        &:hover {
+            font-size: 22px;
+            box-shadow: 2px 2px rgb(255, 24, 82);
+            border-width: 2px;
+            border-radius: 12px;
+            border-color: cyan;
+            border-style: solid;
+        }
+    }
+
+    &:hover {
+        font-size: 18px;
+    }
+}
+
+.navbar-list-class {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    font-family: var(--font); /* Corregido de 20px a la variable de fuente */
+    font-size: 16px;
+
+    li {
+
+        gap: 6px;
+        padding: 6px;
+        margin: 6px;
+        border-radius: 8px; /* Cambiado de 15% a una medida estable o px */
+        border: 1px solid rgb(72, 111, 219); /* border-color solo no pinta si falta el border-style */
+        transition: 0.25s ease;
+
+        &:hover {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            background-color: aqua;
+        }
+    }
+}
