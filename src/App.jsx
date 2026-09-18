@@ -8,7 +8,7 @@ import Home from './pages/home'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/WebJSXTest">
       {/* Contenedor principal de diseño */}
       <div className="app-container">
         <Header />

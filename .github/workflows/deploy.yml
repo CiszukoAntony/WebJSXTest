@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ] # Cambia 'main' por 'master' si tu rama principal se llama así
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Install pnpm 📦
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Set up Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies 📥
+        run: pnpm install
+
+      - name: Build project 🛠️
+        run: pnpm run build
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # La carpeta que genera Vite al compilar
