@@ -8,10 +8,13 @@ const Information = () => {
     useEffect(() => {
         console.log("El usuario ha visitado la página de Información");
     }, []);
+
   return (
-    <div className="information-webpage-class" id="webpage">
+    <main className="information-webpage-class" id="webpage">
+
         <HeroTitle title="information" />
-        <div className="basic-info-container">
+        
+        <section className="basic-info-container">
             <h2>Bienvenido a nuestro espacio digital</h2>
             <p>
                 Este proyecto ha sido desarrollado con un enfoque moderno y modular utilizando tecnologías 
@@ -39,8 +42,8 @@ const Information = () => {
                 <li><strong>Modularidad y Limpieza:</strong> Código estructurado bajo buenas prácticas, facilitando su mantenimiento y futura expansión.</li>
                 <li><strong>Diseño Minimalista:</strong> Una interfaz limpia centrada en la usabilidad y en una experiencia visual agradable para cualquier usuario.</li>
             </ul>
-        </div>
-    </div>
+        </section>
+    </main>
   )
 }
 

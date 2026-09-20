@@ -16,6 +16,7 @@ const App = () => {
         {/* Contenido dinámico que empuja el footer hacia abajo */}
         <div className="main-content">
           <Routes>
+            <Route path=" " element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/info" element={<Information />} />
