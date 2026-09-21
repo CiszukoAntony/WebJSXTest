@@ -105,41 +105,53 @@ const Information = () => {
                 Nuestros Pilares Técnicos
             </h3>
 
-            <ul
-            className="information__list"
-            id="information__list-pillars">
+            <section
+            className="information__grid"
+            id="information__grid-pillars">
 
-                <li
+                <div
                 className="information__item"
                 id="information__item-performance">
                     <strong
                     className="information__strong"
                     id="information__strong-performance">
                         Rendimiento Óptimo:
-                    </strong> Carga rápida y transiciones instantáneas entre las diferentes vistas de la aplicación.
-                </li>
+                    </strong>
 
-                <li
+                    <p>
+                        Carga rápida y transiciones instantáneas entre las diferentes vistas de la aplicación.
+                        </p>
+                </div>
+
+                <div
                 className="information__item"
                 id="information__item-modularity">
                     <strong
                     className="information__strong"
                     id="information__strong-modularity">
                         Modularidad y Limpieza:
-                    </strong> Código estructurado bajo buenas prácticas, facilitando su mantenimiento y futura expansión.
-                </li>
+                    </strong>
 
-                <li
+                    <p>
+                        Código estructurado bajo buenas prácticas, facilitando su mantenimiento y futura expansión.
+                    </p>
+                </div>
+
+                <div
                 className="information__item"
                 id="information__item-minimalism">
                     <strong
                     className="information__strong"
                     id="information__strong-minimalism">
                         Diseño Minimalista:
-                    </strong> Una interfaz limpia centrada en la usabilidad y en una experiencia visual agradable para cualquier usuario.
-                </li>
+                    </strong>
 
-            </ul>
+                    <p>
+                        Una interfaz limpia centrada en la usabilidad y en una experiencia visual agradable para cualquier usuario.
+                    </p>
+                </div>
+
+            </section>
 
         </section>
     </main>

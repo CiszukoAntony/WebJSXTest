@@ -4,7 +4,11 @@
 
     /* Colores */
     --pure-white: white;
-    --bg-color: rgb(20, 1, 66);
+    --bg-color: rgb(6, 6, 87);
+
+    /* Gradientes */
+    --bg-color-gradient: linear-gradient(rgb(0, 19, 80), rgb(55, 0, 92));
+
 }
 
 /* Reset básico para evitar desbordamientos */
@@ -63,7 +67,7 @@ body {
     color: var(--pure-white);
     font-family: var(--font);
     font-size: 1.2rem;
-    background-color: var(--bg-color);
+    background-image: var(--bg-color-gradient);
     margin: 0.25rem;
 }
 

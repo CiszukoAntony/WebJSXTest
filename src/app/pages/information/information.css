@@ -44,3 +44,140 @@
         list-style-type: disc;
     }
 }
+
+.information__grid {
+    display: grid;
+    transition: 0.3s ease;
+    margin: 12px;
+    padding: 12px;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 5%;
+    font-size: 1.2rem;
+    border-width: 3px;
+    border-color: rgba(0, 89, 255, 0.596);
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.274);
+    transition: 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #information__item-performance {
+        background-color: rgba(255, 0, 0, 0.411);
+        border-color: red;
+
+        &:hover {
+            cursor: pointer;
+            font-size: 18px;
+            background-color: rgba(231, 30, 30, 0.637);
+        }
+
+        &:active {
+            cursor: pointer;
+            font-size: 20px;
+            background-color: rgb(65, 1, 1);
+        }
+    }
+
+    #information__item-modularity {
+        background-color: rgb(83, 20, 199);
+        border-color: rgb(30, 17, 212);
+
+        &:hover {
+            cursor: pointer;
+            font-size: 18px;
+            background-color: rgb(110, 44, 216);
+        }
+
+        &:active {
+            cursor: pointer;
+            font-size: 20px;
+            background-color: rgb(45, 13, 97);
+        }
+    }
+
+    #information__item-minimalism {
+        background-color: rgba(13, 155, 84, 0.411);
+        border-color: rgb(0, 255, 21);
+
+        &:hover {
+            cursor: pointer;
+            font-size: 18px;
+            background-color: rgb(38, 129, 2);
+        }
+
+        &:active {
+            cursor: pointer;
+            font-size: 20px;
+            background-color: rgb(0, 51, 3);
+        }
+    }
+    
+    .information__item {
+        transition: 0.3s ease;
+        font-size: 16px;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        margin: 12px;
+        padding: 12px;
+        border-color: rgb(42, 40, 190);
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 2px;
+        background-color: rgba(0, 0, 0, 0.541);
+
+        p {
+                opacity: 0;
+                visibility: hidden;
+                font-size: 0.5rem;
+                transition: opacity 0.3s ease, font-size 0.3s ease;
+                overflow: hidden;
+                max-height: 0;
+            }
+
+            /* Al hacer hover en la tarjeta, el párrafo aparece suavemente */
+            &:hover {
+                p {
+                    opacity: 1;
+                    visibility: visible;
+                    font-size: 1rem;
+                    max-height: 150px;
+                }
+            }
+
+        .information__strong {
+            transition: 0.3s ease;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            border-color: rgba(255, 255, 255, 0.199);
+            background-color: rgba(0, 0, 0, 0.212);
+            border-radius: 18px;
+            border-style: solid;
+            border-width: 4px;
+            padding: 12px;
+            margin: 12px;
+
+            &:hover {
+                cursor: pointer;
+                font-size: 20px;
+                padding-inline: 70px;
+                background-color: rgba(201, 177, 177, 0.267);
+            }
+
+            &:active {
+                cursor: pointer;
+                font-size: 22px;
+                background-color: rgba(136, 127, 127, 0.267);
+            }
+        }
+    }
+}
