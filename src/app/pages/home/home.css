@@ -1,0 +1,56 @@
+:root {
+    /* Fuentes */
+    --font: Arial, Helvetica, sans-serif;
+
+    /* Colores */
+    --pure-white: white;
+    --bg-color: rgb(20, 1, 66);
+}
+
+/* Reset básico para evitar desbordamientos */
+* {
+    box-sizing: border-box;
+}
+
+
+.home__welcome-text {
+    width: 100%;
+    height: 100%;     /* Mantiene la proporción original de la imagen */
+    font-size: 2rem;
+    color: rgb(0, 247, 255);
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes animateCat {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.home__image-cat {
+    width: 100%;
+    max-width: 200px; /* Ajusta este valor al tamaño que prefieras */
+    height: auto;     /* Mantiene la proporción original de la imagen */
+    margin: 22px;
+    
+    animation-name: animateCat;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    transition: 0.3s ease;
+
+    &:hover {
+        max-width: 225px;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+    }
+}

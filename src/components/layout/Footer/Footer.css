@@ -1,0 +1,38 @@
+:root {
+    /* Fuentes */
+    --font: Arial, Helvetica, sans-serif;
+
+    /* Colores */
+    --pure-white: white;
+    --bg-color: rgb(20, 1, 66);
+}
+
+/* Reset básico para evitar desbordamientos */
+* {
+    box-sizing: border-box;
+}
+
+.footer-conteiner__main {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Estándar moderno */
+    font-family: var(--font);
+    width: 100%;
+    max-width: 900px;
+    margin: 24px auto 12px auto;
+    padding: 16px;
+    border-radius: 12px;
+    color: var(--pure-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(3, 0, 34);
+    font-size: 1rem;
+    transition: 0.25s ease;
+
+    &:hover {
+        color: lightblue;
+    }
+}

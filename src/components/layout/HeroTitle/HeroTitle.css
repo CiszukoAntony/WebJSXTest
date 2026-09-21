@@ -1,0 +1,37 @@
+:root {
+    /* Fuentes */
+    --font: Arial, Helvetica, sans-serif;
+
+    /* Colores */
+    --pure-white: white;
+    --bg-color: rgb(20, 1, 66);
+}
+
+/* Reset básico para evitar desbordamientos */
+* {
+    box-sizing: border-box;
+}
+
+.herotitle-container__main {
+    padding-inline: 6rem;
+    margin: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: 0.3s ease-in;
+    text-shadow: 2px 2px rgb(58, 13, 141);
+    border-style: solid;
+    border-color: black;
+    border-width: 0.2rem;
+    border-radius: 12px;
+    background-color: rgba(3, 3, 75, 0.315);
+
+    &:hover {
+        font-size: 2em;
+        text-shadow: 4px 4px black;
+    }
+}

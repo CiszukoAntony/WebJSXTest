@@ -1,0 +1,115 @@
+:root {
+    /* Fuentes */
+    --font: Arial, Helvetica, sans-serif;
+
+    /* Colores */
+    --pure-white: white;
+    --bg-color: rgb(20, 1, 66);
+}
+
+/* Reset básico para evitar desbordamientos */
+* {
+    box-sizing: border-box;
+}
+
+.header-container__main {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Estándar moderno */
+    font-family: var(--font);
+    max-width: 900px;
+    width: 100%;
+    margin: 12px auto;
+    padding: 0px 12px;
+    color: var(--pure-white);
+    text-align: left;
+    align-items: center;
+    background-color: rgba(73, 73, 255, 0.39);
+    font-size: 12px; /* Corregido de size a font-size */
+    transition: 0.25s ease;
+    border-style: solid;
+    border-radius: 18px;
+    border-width: 4px;
+    border-color: rgba(28, 28, 211, 0.445);             /* Desenfoque para navegadores modernos */
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .header-container__appname {
+        font-size: 1.4rem;
+        font-weight: bolder;
+        border-width: 0px;
+        transition: 0.25s ease;
+        padding: 12px;
+
+        &:hover {
+            font-size: 1.5rem;
+            box-shadow: 2px 2px rgb(255, 24, 82);
+            border-width: 2px;
+            border-radius: 12px;
+            border-color: cyan;
+            border-style: solid;
+        }
+
+        &:active {
+            font-size: 2rem;
+            color: rgb(21, 150, 255);
+            font-weight: bolder;
+            background-color: rgb(18, 5, 87);
+            border-radius: 16px;
+            border-style: none;
+        }
+    }
+
+    &:hover {
+        font-size: 18px;
+    }
+}
+
+.navbar-nav__main .navbar-ul__list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    font-family: var(--font); /* Corregido de 20px a la variable de fuente */
+    font-size: 1rem;
+    gap: 8px;
+    margin: 0;
+    padding: 8px 0;
+
+    li {
+        padding: 6px 12px;
+        border-radius: 8px; /* Cambiado de 15% a una medida estable o px */
+        border: 1px solid rgb(72, 111, 219); /* border-color solo no pinta si falta el border-style */
+        transition: 0.25s ease;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        align-content: center;
+
+        &:hover {
+            font-size: 1.5em;
+            color: black;
+            font-weight: bold;
+            background-color: aqua;
+        }
+
+        &:active {
+            font-size: 1em;
+            color: black;
+            font-weight: bolder;
+            background-color: rgb(51, 15, 255);
+            border-radius: 12px;
+            border-style: none;
+        }
+    }
+}
