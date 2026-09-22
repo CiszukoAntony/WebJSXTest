@@ -1,4 +1,4 @@
-@import "../layout.module.css";
+@use "../layout.module.scss" as *;
 
 .header-container__main {
     display: flex;

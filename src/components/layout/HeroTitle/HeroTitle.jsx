@@ -1,4 +1,4 @@
-import styles from './HeroTitle.module.css'
+import styles from './HeroTitle.module.scss'
 
 const HeroTitle = ({title}) => {
   return (

@@ -1,4 +1,4 @@
-import styles from './Footer.module.css'
+import styles from './Footer.module.scss'
 
 const DevName = "Ciszuko Antony"
 let CopyYear = 2026

@@ -1,5 +1,5 @@
-import '../../../globals.css'
-import './form.css'
+import '../../../globals.scss'
+import './form.scss'
 import HeroTitle from '../../../components/layout/HeroTitle/HeroTitle.jsx';
 import { useEffect } from 'react'
 

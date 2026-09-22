@@ -1,4 +1,4 @@
-import styles from './Template.module.css'
+import styles from './Template.module.scss'
 
 const TemplateComponent = () => {
   return (

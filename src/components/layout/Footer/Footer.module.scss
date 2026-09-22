@@ -1,4 +1,4 @@
-@import "../layout.module.css";
+@use "../layout.module.scss" as *;
 
 .footer-container__main {
     -webkit-user-select: none; /* Safari */

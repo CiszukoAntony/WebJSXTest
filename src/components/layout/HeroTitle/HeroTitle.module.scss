@@ -1,4 +1,4 @@
-@import "../layout.module.css";
+@use "../layout.module.scss" as *;
 
 .herotitle-container__main {
     padding-inline: 6rem;

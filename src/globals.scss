@@ -1,5 +1,5 @@
-@import "./styles/variables.css";
-@import "./styles/reset.css";
+@use "./styles/variables.scss" as *;
+@use "./styles/reset.scss" as *;
 
 .app-container__main {
     display: flex;
@@ -67,6 +67,9 @@ body {
     font-family: var(--font);
     font-size: 1.2rem;
     background-image: var(--bg-color-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0.25rem;
 }
 
