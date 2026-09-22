@@ -1,18 +1,6 @@
-:root {
-    /* Fuentes */
-    --font: Arial, Helvetica, sans-serif;
+@import "../layout.module.css";
 
-    /* Colores */
-    --pure-white: white;
-    --bg-color: rgb(20, 1, 66);
-}
-
-/* Reset básico para evitar desbordamientos */
-* {
-    box-sizing: border-box;
-}
-
-.footer-conteiner__main {
+.footer-container__main {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;     /* Internet Explorer/Edge */

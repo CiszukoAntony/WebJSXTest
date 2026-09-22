@@ -1,0 +1,12 @@
+:root {
+    /* Fuentes */
+    --font: Arial, Helvetica, sans-serif;
+
+    /* Colores */
+    --pure-white: white;
+    --bg-color: rgb(6, 6, 87);
+
+    /* Gradientes */
+    --bg-color-gradient: linear-gradient(rgb(0, 19, 80), rgb(55, 0, 92));
+
+}

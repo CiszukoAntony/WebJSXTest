@@ -1,9 +1,9 @@
-import './HeroTitle.css'
+import styles from './HeroTitle.module.css'
 
 const HeroTitle = ({title}) => {
   return (
     <section
-    className="herotitle-container__main"
+    className={styles['herotitle-container__main']}
     id="herotitle-container__main">
 
         <p

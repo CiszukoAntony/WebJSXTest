@@ -1,4 +1,5 @@
 import '../globals.css'
+import './template.css'
 import HeroTitle from '../components/HeroTitle';
 import { useEffect } from 'react'
 

@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './globals.css'
-import './components/layout/layout.css'
 import Header from './components/layout/Header/Header.jsx'
 import Footer from './components/layout/Footer/Footer.jsx'
 import Information from './app/pages/information/information.jsx'

@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom'
-import './Header.css'
+import styles from './Header.module.css'
 
 const AppName = "WebJSXTest"
 
 const Header = () => {
   return (
     <header
-    className="header-container__main"
+    className={styles['header-container__main']}
     id="header-container__main">
 
         <div
-        className="header-container__appname"
+        className={styles['header-container__appname']}
         id="header-container__appname">
 
             <Link
@@ -19,12 +19,12 @@ const Header = () => {
         </div>
 
         <nav
-        className="navbar-nav__main"
+        className={styles['navbar-nav__main']}
         id="navbar-nav__main"
         draggable="false">
 
             <ul
-            className="navbar-ul__list"
+            className={styles["navbar-ul__list"]}
             id="navbar-ul__list"
             draggable="false">
 

@@ -1,35 +1,39 @@
-:root {
-    /* Fuentes */
-    --font: Arial, Helvetica, sans-serif;
-
-    /* Colores */
-    --pure-white: white;
-    --bg-color: rgb(6, 6, 87);
-
-    /* Gradientes */
-    --bg-color-gradient: linear-gradient(rgb(0, 19, 80), rgb(55, 0, 92));
-
-}
-
-/* Reset básico para evitar desbordamientos */
-* {
-    box-sizing: border-box;
-}
+@import "./styles/variables.css";
+@import "./styles/reset.css";
 
 .app-container__main {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
+    width: 100%;
+    min-height: 100vh;
+}
+
+aside {
+  width: 100%;           /* Ocupa todo el ancho en móviles */
+  padding: 1rem;
+  background-color: var(--sidebar-bg, #f4f4f4);
 }
 
 /* El área central que se expandirá para llenar el espacio vacío */
 .main-content {
+    width: 100%;           /* Ocupa todo el ancho en móviles */
+    padding: 1rem;
     flex: 1; 
     display: flex;
     flex-direction: column;
 }
 
-/* --- PERSONALIZACIÓN DEL SCROLLBAR --- */
+.home-webpage__main, .form-webpage__main, .information-webpage__main {
+    display: flex;
+    flex-direction: column; /* Coloca el texto arriba y el gato abajo (o viceversa) */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center;     /* Centra el texto por si acaso */
+    gap: 40px;              /* Espacio de separación entre el texto y el gato */
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Para navegadores Chrome, Edge y Safari (WebKit) */
 ::-webkit-scrollbar {
@@ -58,11 +62,6 @@
     color: rgb(10, 0, 35);
 }
 
-/* Elimina el recuadro feo por defecto al hacer clic en elementos interactivos */
-a:focus, button:focus {
-    outline: none; 
-}
-
 body {
     color: var(--pure-white);
     font-family: var(--font);
@@ -71,13 +70,17 @@ body {
     margin: 0.25rem;
 }
 
-.home-webpage__main, .form-webpage__main, .information-webpage__main {
-    display: flex;
-    flex-direction: column; /* Coloca el texto arriba y el gato abajo (o viceversa) */
-    align-items: center;    /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente */
-    text-align: center;     /* Centra el texto por si acaso */
-    gap: 40px;              /* Espacio de separación entre el texto y el gato */
-    width: 100%;
-    margin: 0 auto;
+@media (min-width: 768px) {
+  .app-layout {
+    flex-direction: row; /* En pantallas grandes, pasan a estar lado a lado (fila) */
+  }
+
+  aside {
+    width: 250px;        /* Ancho fijo para la barra lateral en PC */
+    flex-shrink: 0;
+  }
+
+  .main-content {
+    flex: 1;             /* El contenido principal ocupa el resto del espacio disponible */
+  }
 }

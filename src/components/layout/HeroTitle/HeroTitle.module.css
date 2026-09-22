@@ -1,16 +1,4 @@
-:root {
-    /* Fuentes */
-    --font: Arial, Helvetica, sans-serif;
-
-    /* Colores */
-    --pure-white: white;
-    --bg-color: rgb(20, 1, 66);
-}
-
-/* Reset básico para evitar desbordamientos */
-* {
-    box-sizing: border-box;
-}
+@import "../layout.module.css";
 
 .herotitle-container__main {
     padding-inline: 6rem;

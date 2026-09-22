@@ -1,18 +1,3 @@
-:root {
-    /* Fuentes */
-    --font: Arial, Helvetica, sans-serif;
-
-    /* Colores */
-    --pure-white: white;
-    --bg-color: rgb(20, 1, 66);
-}
-
-/* Reset básico para evitar desbordamientos */
-* {
-    box-sizing: border-box;
-}
-
-
 .home__welcome-text {
     width: 100%;
     height: 100%;     /* Mantiene la proporción original de la imagen */

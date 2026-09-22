@@ -1,16 +1,4 @@
-:root {
-    /* Fuentes */
-    --font: Arial, Helvetica, sans-serif;
-
-    /* Colores */
-    --pure-white: white;
-    --bg-color: rgb(20, 1, 66);
-}
-
-/* Reset básico para evitar desbordamientos */
-* {
-    box-sizing: border-box;
-}
+@import "../layout.module.css";
 
 .header-container__main {
     display: flex;
@@ -74,6 +62,10 @@
     &:hover {
         font-size: 18px;
     }
+}
+
+.navbar-li__home {
+    font-size: 200px;
 }
 
 .navbar-nav__main .navbar-ul__list {

@@ -1,4 +1,4 @@
-import './Footer.css'
+import styles from './Footer.module.css'
 
 const DevName = "Ciszuko Antony"
 let CopyYear = 2026
@@ -6,8 +6,8 @@ let CopyYear = 2026
 const Footer = () => {
   return (
     <footer
-    className="footer-conteiner__main"
-    id="footer-conteiner__main">
+    className={styles['footer-container__main']}
+    id="footer-container__main">
 
         <section
         className="footer-section-copyright__main"
