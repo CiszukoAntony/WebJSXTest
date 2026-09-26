@@ -30,7 +30,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies 📥
-        run: pnpm install --force --config.strict-dep-builds=false --allow-build=@parcel/watcher
+        run: pnpm install --force
 
       - name: Build project 🛠️
         run: pnpm run build
