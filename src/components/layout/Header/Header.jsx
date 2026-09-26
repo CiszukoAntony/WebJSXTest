@@ -60,6 +60,17 @@ const Header = () => {
                     draggable="false">💗 Form
                     </Link>
                 </li>
+
+                <li
+                className="navbar-li__contact"
+                id="navbar-li__contact"
+                draggable="false">
+
+                    <Link
+                    to="/contact"
+                    draggable="false">🧒 Contact
+                    </Link>
+                </li>
             </ul>
         </nav>
     </header>

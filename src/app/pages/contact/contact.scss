@@ -1,0 +1,215 @@
+.contact__main {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Columna 1 para la imagen, Columna 2 para el grid de contactos */
+    gap: 12px; /* Espacio limpio entre la imagen y los contactos */
+    align-items: center; /* Los centra verticalmente */
+    justify-content: center;
+    transition: 0.5s ease;
+    overflow: hidden;
+    padding: 2rem;
+
+    .contact-container__main {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        border: 12px solid rgba(0, 0, 0, 0.295);
+        border-radius: 12px;
+        margin: 12px;
+        padding: 12px;
+        
+    }
+}
+
+.contact__grid {
+    display: grid;
+    transition: 0.3s ease;
+    margin: 12px;
+    padding: 12px;
+    gap: 12px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 5%;
+    font-size: 1.2rem;
+    border-width: 3px;
+    border-color: rgba(0, 89, 255, 0.596);
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.274);
+    transition: 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #contact__item-email {
+        background-color: rgba(0, 255, 234, 0.411);
+        border-color: rgb(0, 255, 200);
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            background-color: rgba(30, 231, 231, 0.637);
+        }
+
+        &:active {
+            cursor: pointer;
+            transform: scale(1.20);
+            background-color: rgb(1, 42, 65);
+        }
+    }
+
+    #contact__item-phone {
+        background-color: rgb(199, 20, 89);
+        border-color: rgb(212, 17, 114);
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            background-color: rgb(216, 44, 116);
+        }
+
+        &:active {
+            cursor: pointer;
+            transform: scale(1.20);
+            background-color: rgb(97, 13, 59);
+        }
+    }
+
+    #contact__item-webpage {
+        text-decoration: none;
+        background-color: rgba(129, 155, 13, 0.411);
+        border-color: rgb(157, 255, 0);
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            background-color: rgb(106, 129, 2);
+        }
+
+        &:active {
+            cursor: pointer;
+            transform: scale(1.20);
+            background-color: rgb(37, 51, 0);
+        }
+    }
+    
+    .contact__item {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease;
+        font-size: 1rem;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        margin: 12px;
+        padding: 12px;
+        border-color: rgb(0, 17, 27);
+        border-radius: 30px;
+        border-style: solid;
+        border-width: 2px;
+        background-color: rgba(0, 0, 0, 0.541);
+
+        p {
+                opacity: 0;
+                visibility: hidden;
+                font-size: 1rem;
+                transition: opacity 0.3s ease;
+                overflow: hidden;
+                max-height: 0;
+        }
+
+            /* Al hacer hover en la tarjeta, el párrafo aparece suavemente */
+            &:hover {
+                p {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1.15);
+                    max-height: 150px;
+                    font-size: 1rem;
+                }
+            }
+
+        .contact__strong {
+            transition: 0.3s ease;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            border-color: rgba(255, 255, 255, 0.199);
+            background-color: rgba(0, 0, 0, 0.212);
+            border-radius: 18px;
+            border-style: solid;
+            border-width: 4px;
+            padding: 12px;
+            margin: 12px;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.15);
+                background-color: rgba(201, 177, 177, 0.267);
+            }
+
+            &:active {
+                cursor: pointer;
+                transform: scale(1.05);
+                background-color: rgba(136, 127, 127, 0.267);
+            }
+        }
+    }
+}
+
+.contact-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    .contact-profile__text {
+        align-self: center;
+        text-align: center;
+        font-size: bolder;
+        transition: 0.3s ease;
+        padding: 12px;
+        margin: 2px;
+        border-radius: 12px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.384);
+        background-color: rgba(0, 0, 0, 0.068);
+
+        &:hover {
+            transform: scale(1.15); /* El zoom maneja el cambio de tamaño limpiamente */
+            background-color: aqua;
+            color: black;
+        }
+
+        &:active {
+            transform: scale(1.25);
+        }
+    }
+
+    .contact-profile__selfieImage {
+        align-self: center;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        margin: 30px;
+        object-fit: fill;
+        object-position: center;
+        border-radius: 50%; /* Suficiente para hacerla un círculo perfecto */
+        transition: transform 0.3s ease; /* Solo animamos la transformación por rendimiento */
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.15); /* El zoom maneja el cambio de tamaño limpiamente */
+            box-shadow: 2px 2px rgb(7, 55, 211), -2px -2px rgb(128, 162, 255);
+        }
+
+        &:active {
+            cursor: pointer;
+            transform: scale(1.25);
+        }
+    }
+}

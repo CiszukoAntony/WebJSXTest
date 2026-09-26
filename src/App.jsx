@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer/Footer.jsx'
 import Information from './app/pages/information/information.jsx'
 import Form from './app/pages/form/form.jsx'
 import Home from './app/pages/home/home.jsx'
+import Contact from './app/pages/contact/contact.jsx'
 
 const App = () => {
   return (
@@ -44,6 +45,10 @@ const App = () => {
             <Route
             path="/form"
             element={<Form />} />
+
+            <Route
+            path="/contact"
+            element={<Contact />} />
 
           </Routes>
         </div>
