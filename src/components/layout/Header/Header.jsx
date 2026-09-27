@@ -14,6 +14,7 @@ const Header = () => {
         id="header-container__appname">
 
             <Link
+            className={styles['header-container__appname-link']}
             to="/">❇️ {AppName}
             </Link>
         </div>
@@ -34,6 +35,7 @@ const Header = () => {
                 draggable="false">
 
                     <Link
+                    className={styles['navbar-link']}
                     to="/home"
                     draggable="false">🏠 Home
                     </Link>
@@ -45,6 +47,7 @@ const Header = () => {
                 draggable="false">
 
                     <Link
+                    className={styles['navbar-link']}
                     to="/info"
                     draggable="false">ℹ️ Information
                     </Link>
@@ -56,6 +59,7 @@ const Header = () => {
                 draggable="false">
 
                     <Link
+                    className={styles['navbar-link']}
                     to="/form"
                     draggable="false">💗 Form
                     </Link>
@@ -67,6 +71,7 @@ const Header = () => {
                 draggable="false">
 
                     <Link
+                    className={styles['navbar-link']}
                     to="/contact"
                     draggable="false">🧒 Contact
                     </Link>

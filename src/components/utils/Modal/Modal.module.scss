@@ -1,0 +1,107 @@
+@use "../utils.module.scss" as *;
+
+.modal-container__main {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: rgb(122, 14, 155);
+    padding: 12px;
+    margin: 0;
+    border-radius: 50px;
+    border-color: rgba(226, 42, 113, 0.397);
+    border-style: solid;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    overflow: hidden;
+    z-index: 1000;
+    max-width: min(90vw, 520px);
+    width: fit-content;
+
+    .modal-container__label {
+        display: inherit;
+        flex-direction: column;
+        -webkit-user-select: none;
+        user-select: none;
+        background-color: rgba(10, 34, 141, 0.603);
+        font-size: 3rem;
+        padding: 16px;
+        margin: 1rem auto;
+        border-radius: 16px;
+        border-color: rgba(172, 11, 204, 0.705);
+        border-style: solid;
+        transition: 0.1s ease;
+
+        &:hover {
+            background-color: rgba(230, 42, 221, 0.747);
+        }
+
+        &:active {
+            background-color: rgba(189, 21, 99, 0.712);
+        }
+    }
+
+    .modal-container__btn-close {
+        display: inherit;
+        -webkit-user-select: none;
+        user-select: none;
+        flex-direction: column;
+        color: white;
+        background-color: rgb(63, 3, 3);
+        font-size: 2rem;
+        padding: 12px rgb(63, 3, 3);
+        margin: 1rem auto;
+        border-radius: 16px;
+        border-color: rgb(211, 23, 23);
+        border-style: solid;
+        transition: 0.1s ease;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        p {
+            filter: brightness(100);
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            background-color: rgb(102, 9, 9);
+            font-weight: bolder;
+        }
+
+        &:active {
+            cursor: pointer;
+            transform: scale(1.2);
+            background-color: rgb(145, 15, 15);
+            font-weight: bolder;
+        }
+    }
+}
+
+.modal-container__main::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modal-container__main:popover-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-container__main:not(:popover-open) {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    pointer-events: none;
+}

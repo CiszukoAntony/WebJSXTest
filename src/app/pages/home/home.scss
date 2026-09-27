@@ -39,3 +39,31 @@
         animation-duration: 1s;
     }
 }
+
+.home-modal__btn {
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none;
+    user-select: none;
+    color: white;
+    background-color: rgb(7, 3, 63);
+    font-size: 1rem;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 1.2rem;
+    border-color: rgb(23, 26, 211);
+    border-style: solid;
+    transition: 0.1s ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: rgb(15, 9, 102);
+    }
+
+    &:active {
+        cursor: pointer;
+        transform: scale(1.2);
+        background-color: rgb(24, 15, 145);
+    }
+}
